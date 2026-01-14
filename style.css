@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+}
+
+.links {
+    display: flex;
+    gap: 18px;
+}
+
+/* Hero secttion */
+
+#hero-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.hero-content {
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.hero-img-container {
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+}
+/* Info section */
+
+#info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+}
+
+.info-content-container {
+    display: flex;
+    gap: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.quote {
+    width: 80%;
+}
+
+.quote-author {
+    text-align: right;
+}
+
+/* Signup section */
+
+#signup-section {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-article {
+    padding: 5%;
+    display: flex;
+    gap: 32px;
+    background-color: #3882f6;
+    align-items: end;
+}
+
+.signup-btn {
+    flex-basis: auto;
+    padding: 0px;
+    height: auto;
+    width: 100px;
+}
+
+#footer {
+    padding: 16px;
+    text-align: center;
+}
