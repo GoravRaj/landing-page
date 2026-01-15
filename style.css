@@ -1,141 +1,182 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: "Roboto", sans-serif;
 }
 
 #header {
-    display: flex;
-    justify-content: space-around;
-    padding: 18px;
-    background-color: #1f2937;
-    color: #f9faf8;
+  display: flex;
+  justify-content: space-around;
+  padding: 18px;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.logo {
+  font-size: 24px;
 }
 
 .links {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.links a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: ease-in-out 200ms;
+}
+
+.links a:hover {
+    color: #3882f6;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Hero secttion */
 
 #hero-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    background-color: #1f2937;
-    color: #f9faf8;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 52px;
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
 .hero-content {
-    width: 400px;
-    height: auto;
-    border: 1px solid black;
+  width: 500px;
+  height: auto;
+  padding: 16px;
+  margin: 52px 0;
 }
 
 .hero-img-container {
-    width: 300px;
-    height: 250px;
-    border: 1px solid black;
+  width: 500px;
+  height: 250px;
+  margin: 52px 0;
+  flex-basis: auto;
+  flex-shrink: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .hero-title {
-    font-size: 48px;
-    font-weight: 900;
-
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.hero-text {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 16px;
 }
 
 .hero-btn {
-    background-color: #3882f6;
-    color: #f9faf8;
+  background-color: #3882f6;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 5px;
+  color: #f9faf8;
+  transition: ease-in-out 200ms;
+}
+
+.hero-btn:hover {
+  cursor: pointer;
+  border: 1px solid #f9faf8;
+  background-color: transparent;
 }
 /* Info section */
 
 #info-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
 }
 
 .info-title {
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 900;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
 }
 
 .info-content-container {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .content-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-img {
-    width: 200px;
-    height: 200px;
-    border: 3px solid #3882f6;
-    border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #3882f6;
+  border-radius: 5px;
 }
 
 .quote {
-    width: 100%;
-    background-color: #e5e7eb;
-
+  width: 100%;
+  background-color: #e5e7eb;
 }
 
 .quote-text {
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 300;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
 }
 
 .quote-author {
-    text-align: right;
+  text-align: right;
 }
 
 /* Signup section */
 
 #signup-section {
-    padding: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f9faf8;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9faf8;
 }
 
 .signup-article {
-    padding: 5%;
-    display: flex;
-    gap: 32px;
-    background-color: #3882f6;
-    align-items: end;
+  padding: 5%;
+  display: flex;
+  gap: 32px;
+  background-color: #3882f6;
+  align-items: end;
 }
 
 .signup-btn {
-    flex-basis: auto;
-    padding: 0px;
-    height: auto;
-    width: 100px;
-    border: 3px solid #f9faf8;
-    background-color: #3882f6;
-    color: #f9faf8;
+  flex-basis: auto;
+  padding: 0px;
+  height: auto;
+  width: 100px;
+  border: 3px solid #f9faf8;
+  background-color: #3882f6;
+  color: #f9faf8;
 }
-
 
 /* Footer */
 #footer {
-    background-color: #1f2937;
-    color: #f9faf8;
-    padding: 16px;
-    text-align: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 16px;
+  text-align: center;
 }
