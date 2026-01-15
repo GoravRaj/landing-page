@@ -108,6 +108,8 @@ body {
 }
 
 .info-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
@@ -115,12 +117,18 @@ body {
 
 .info-content-container {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+
+.info-text {
+    width: 200px;
+    text-align: center;
 }
 
 .info-img {
@@ -133,6 +141,8 @@ body {
 .quote {
   width: 100%;
   background-color: #e5e7eb;
+  padding: 11%;
+  margin-top: 32px;
 }
 
 .quote-text {
